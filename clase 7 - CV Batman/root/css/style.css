@@ -1,0 +1,53 @@
+body{width: 100%;
+    overflow-x:hidden
+}
+
+.bloque-batman {background-color: #e5e5e5;
+block-size: 188px;
+text-align: center;
+justify-content: middle;
+}
+
+h1 {background-color: #c4c4c4;
+    color: #005677 ;
+    font-family: 'Times New Roman';
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 60px;
+    margin-block-end: 133px;
+    margin-block-start: 0;
+    text-transform:uppercase;
+    text-align: center;
+    }    /* Los comandos margin-block me dan el ancho del margen superior e inferior */
+
+h2  {background-color: #c4c4c4;
+    color: #005677 ;
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 12px;
+    text-transform:uppercase;
+    text-align: left;
+}  
+
+    .lista {font-family: 'Times New Roman';
+    font-size: 15px;
+}
+
+.Experiencia{
+    margin-block-start: 0
+
+}
+
+footer {background-color: #005677;
+color: rgb(255,255,255);
+font-family: 'Times New Roman';
+font-size: 20px;
+font-weight: bold;
+line-height: 37px;
+padding-top: 8.5px;
+padding-bottom: 8.5px;
+text-align: center;
+word-spacing: 20px;
+}
+
