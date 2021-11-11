@@ -1,0 +1,54 @@
+body {padding-right: 15%;
+    padding-left: 15%;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+header {background-image: url(../img/fondo.jpg);
+block-size: 300px;
+text-align: center;
+margin-top: 0px;
+margin-bottom: 100px ;
+}
+
+#foto { padding-top: 30px;
+padding-bottom: 25px;}
+
+h1 {background-color: rgb(87, 16, 16);
+    color:rgb(197, 195, 195) ;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 60px;
+    text-transform:uppercase;
+    text-align: center;
+    }    
+
+h2  {background-color:rgb(87, 16, 16);
+    color:rgb(197, 195, 195) ;
+    font-size: 20px;
+    line-height: 35px;
+    padding-left: 12px;
+    text-transform:uppercase;
+    text-align: left;
+}  
+
+    .lista {font-size: 18px;
+}
+
+.texto-tabulado {padding-left: 90px; }
+.texto-tabulado1 { padding-left: 140px;
+
+}
+
+footer {background-color: rgb(87, 16, 16);
+color:rgb(197, 195, 195);
+font-family: 'Times New Roman';
+font-size: 20px;
+font-weight: bold;
+line-height: 37px;
+padding-top: 8.5px;
+padding-bottom: 8.5px;
+text-align: center;
+word-spacing: 20px;
+}
+

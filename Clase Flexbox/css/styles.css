@@ -1,0 +1,114 @@
+*{margin:0px;
+}
+
+body{ font-family: 'Roboto';
+     background-color: #e5e5e5; 
+     margin:0 auto;
+     width:1024px;
+     
+}
+
+header{ background-color: black;
+     height: 100px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-left:20px;
+     padding-right: 20px;
+     }
+
+.nav ul {font-size:16px;
+     font-style: normal;
+     display: flex;
+     justify-content:space-around;
+     padding: 0px;
+}
+
+.nav a {
+     text-decoration: none;
+     color:#f3f3f3
+}
+
+li { margin: 13px;
+text-decoration:}
+
+main {width: 1024px;
+     height: 420px;
+     display: flex;
+     justify-content:space-around;
+     align-items: center;
+
+}
+
+.seccion1 {background-image: url("../img/delivery.jpg");
+     background-size: contain;
+     font-size:24px;
+     color:#fc200c;
+     font-weight: 700;
+     width: 490px;
+     height: 350px;
+     display: flex;
+     justify-content: flex-start;
+     
+     }
+
+.seccion1 p {padding-left: 20px;
+padding-top:20px}
+
+
+
+.otroestilo { color: #f3f3f3;
+     }
+
+.seccion2 {background-color: #f3f3f3;
+          background-size: contain;
+          font-size:24px;
+          color:black;
+          font-weight: 700;
+          width: 490px;
+          height: 350px;
+         }
+
+.titulo {display:flex;
+     justify-content: center;
+     align-items:flex-start;
+     padding-top: 20px;
+     
+}
+
+.titulo2 {display:flex;
+justify-content: ;}
+
+.top5 {font-size: 20px;
+     display: flex;
+     justify-content:space-between;
+     align-items:center;
+
+}
+
+.lista-top5 {font-size: 16px;
+     display: flex;
+     justify-content: flex-start;
+     align-items:center;
+
+}
+
+.pizza {display: flex;
+      justify-content: flex-start;
+          align-items: center;
+          }
+
+footer { background-color: black;
+     height: 150px;
+     display:flex;
+     justify-content: space-between;
+     }
+
+.lista-footer a{ color:#f3f3f3;
+text-decoration: none;}
+
+.logo-footer {display: flex;
+justify-content: flex-end;
+align-items: center;
+padding-right: 20px;
+}
