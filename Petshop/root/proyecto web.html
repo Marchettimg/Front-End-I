@@ -1,106 +1,160 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Proyecto integrador</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script
-      src="https://kit.fontawesome.com/3f19147b0a.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header>
-      <nav id="navegador1">
-        <ul>
-          <li>Grandes ofertas en comederos</li>
-          <li>Espanol</li>
-          <li>$ARG</li>
-        </ul>
-      </nav>
-      <nav id="navegador2">
-        <ul>
-          <li><img src="img/Logo.png" /></li>
-          <li><img src="img/pawprint 1.png" />Categorias</li>
-          <li><img src="img/pawprint 1.png" />Pets</li>
-          <li><img src="img/pawprint 1.png" />Nosotros</li>
-          <li><img src="img/pawprint 1.png" />Contactanos</li>
-        </ul>
-      </nav>
-      <div class="bienvenida">
-        <div class="texto">
-          <p class="texto1">¡Es un placer tenerte aqui!</p>
-          <p class="texto2">¡Comederos en descuento!</p>
-          <p class="texto3">COMEDEROS</p>
-        </div>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Proyecto integrador</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://kit.fontawesome.com/3f19147b0a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navegador1">
+      <p>Grandes ofertas en comederos</p>
+      <ul class=lista1 type=none>
+        <li><a href="#">Espanol</a></li>
+        <li><a href="#">$ARG</a></li>
+      </ul>
+    </nav>
+
+    <nav class="navegador2">
+      <div>
+        <img src="img/logo-header.png">
       </div>
-    </header>
-    <main>
+      <ul class=lista2 type=none>
+        <li><a href="#"><img src="img/pawprint 1.png" />Categorias</a></li>
+        <li><a href="#"><img src="img/pawprint 1.png" />Categorias</a></li>
+        <li><a href="#"><img src="img/pawprint 1.png" />Categorias</a></li>
+        <li><a href="#"><img src="img/pawprint 1.png" />Categorias</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bienvenida">
+      <div class=caja-textos>
+        <p class="texto1">¡Es un placer tenerte aqui!</p>
+        <p class="texto2">¡Comederos en descuento!</p>
+        <p class="texto3">COMEDEROS</p>
+      </div>
+    </section>
+
+    <section class=principal>
+
       <div class="Titulo-productos">
         <img src="https://i.ibb.co/7jNpqcD/img2.png" alt="img2" border="0" />
         <p>Productos Destacados</p>
       </div>
+
       <div class="opciones">
-      <p>Comederos</p>
-      <p>Accesorios</p>
-      <p>Comida</p>
+        <p>Comederos</p>
+        <p>Accesorios</p>
+        <p>Comida</p>
       </div>
+
       <div class=productos>
         <div class=prod>
-          <img
-            src="https://i.ibb.co/RNQgXmd/churrasquito.png"
-            alt="churrasquito"
-            border="0"
-          />
-          <h2>Juguete Churrasquito</h2>
-          <h3>$150</h3>
+          <img src="https://i.ibb.co/RNQgXmd/churrasquito.png" alt="churrasquito" border="0" />
+          <p class=descripcion>Juguete Churrasquito</p>
+          <p class=precio>$150</p>
         </div>
+
         <div class=prod>
-          <img
-            src="https://i.ibb.co/jgtLB1x/comedero.png"
-            alt="comedero"
-            border="0"
-          />
-          <h2>Comedero para perro</h2>
-          <h3>$250</h3>
+          <img src="https://i.ibb.co/jgtLB1x/comedero.png" alt="comedero" border="0" />
+          <p class=descripcion>Comedero para perro</p>
+          <p class=precio>$250</p>
         </div>
+
         <div class=prod>
-          <img
-            src="https://i.ibb.co/Y776V6p/Huesito.png"
-            alt="Huesito"
-            border="0"
-          />
-          <h2>Juguete Huesito</h2>
-          <h3>$650</h3>
+          <img src="https://i.ibb.co/Y776V6p/Huesito.png" alt="Huesito" border="0" />
+          <p class=descripcion>Juguete Huesito</p>
+          <p class=precio>$650</p>
         </div>
       </div>
-      <footer>
-        <div class="suscripcion">
-          <i class="far fa-envelope"><p>Suscribete para mas novedades</p></i>
+
+      <div class=caja-contactanos>
+        <div>
+          <h2>Contactanos</h2>
+          <p class=form>Nombre y apellido</p>
+          <p class=form>Ingresa tu correo electronico</p>
+          <p class=form>Telefono</p>
         </div>
-        <div class="contacto">
-          <div class=caja>
+        <div class=botones>
+          <p class=boton1><a href="#">Resetear</a></p>
+          <p class=boton2><a href="#">Enviar</a></p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="caja-suscripcion">
+      <div class=texto-suscr>
+        <i class="far fa-envelope"></i>
+        <p>Suscribete para mas novedades</p>
+      </div>
+      
+      <div class=caja-correo>
+        <p class=correo>Ingresa tu correo electronico</p>
+        <p class=boton3>Suscribirme</p>
+      </div>
+    </div>
+
+    <div class=caja-contacto>
+
+      <div class="contacto">
+        <div class=caja>
+          <div class=img-caja>
             <img src="img/location.png" />
+          </div>
+          <div class=texto-caja>
             <h4>Localidad</h4>
             <p>Calle-Provincia</p>
           </div>
-          <div class=caja>
-            <img src="img/phone.png" />
-            <h4>Telefono</h4>
-            <p>Numero de telefono</p>
-          </div>
-          <div class=caja>
-            <img src="img/email.png" />
-            <h4>Correo Electronico</h4>
-            <p>Direccion de correo</p>
-          </div>
         </div>
-        <div class="derechos">
-        <p>Todos los derechos reservados Front End</p>
+
+        <div class=caja>
+          <div class=img-caja>
+            <img src="img/phone.png" />
+          </div>
+          <div class=texto-caja>
+          <h4>Telefono</h4>
+          <p>Numero de telefono</p>
+        </div>
+        </div>
+
+        <div class=caja>
+          <div class=img-caja>
+            <img src="img/email.png" />
+          </div>
+          <div class=texto-caja>
+          <h4>Correo Electronico</h4>
+          <p>Direccion de correo</p>
+        </div>
       </div>
-      </footer>
-    </main>
-  </body>
+    </div>
+
+      <div class=logo-footer>
+        <img src="img/logo-footer.png" />
+        </div>
+
+    </div>
+    
+
+
+
+    <div class="derechos">
+      <p>Todos los derechos reservados Front End</p>
+    </div>
+  </footer>
+
+
+</body>
+
 </html>

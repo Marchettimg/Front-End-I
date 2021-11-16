@@ -2,12 +2,13 @@
   margin: 0;
 }
 
-body {
+body {font-family: "Roboto", sans-serif;
   padding-left: 15%;
   padding-right: 15%;
+  margin: auto;
 }
 
-#navegador1 {
+.navegador1 {
   background-color: rgb(0, 0, 0);
   background-size: contain;
   color: rgb(255, 255, 255);
@@ -15,73 +16,95 @@ body {
   font-size: 10px;
   font-weight: 400;
   line-height: 20px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 58px;
 }
 
-#navegador1 li {
-  display: inline-block;
+.navegador1 ul { display: flex;
+justify-content: space-around;
+padding-right: 55px;
 }
 
-#navegador2 {
+.lista1 li { margin: 9px;
+}
+
+a {color:white;
+  text-decoration: none;
+}
+
+.navegador2 {
   background-color: #f0a83b;
   background-size: contain;
   color: rgb(255, 255, 255);
-  font-family: "Roboto", sans-serif;
   font-size: 13px;
   font-weight: 400;
-  line-height: 62px;
-  text-align: right;
-  padding-right: 10px;
+  height: 63px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
 }
 
-#navegador2 li {
-  display: inline-block;
-}
+.navegador2 ul { display: flex;
+  justify-content: space-around;
+  padding-right: 40px;
+  }
+  
+ .lista2 li { margin: 9px;
+  margin:20px
+  }
 
 .bienvenida {
   background-image: url("../img/img1.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 409px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.texto {
-  float: right;
-  text-align: center;
+.caja-textos {display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.texto1 {
+.texto1 {background-color: #ffffff;
 color:#3c2313;
-  font-family: "Roboto", sans-serif;
   font-size: 30px;
   font-weight: 400;
-  text-align: right;
-  padding-right: 22px;
-  padding-top: 156px;
+  padding:10px;
+  margin:12px;
 }
 
 .texto2 {
     color:#3c2313;
-    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    text-align: right;
-    padding-right: 95px;
-    padding-top:12px;
+    margin-bottom: 12px;
     }
 
-.texto3 {color:rgb(255, 255, 255);
-font-family: "Roboto", sans-serif;
+.texto3 {background-color: #f0a83b;
+  color:rgb(255, 255, 255);
 font-size: 16px;
 font-weight: 400;
-text-align: right;
-padding-right: 140px;
-padding-top:27px;
-        }
+padding: 15px 23px;
+border-radius: 5px;
+}
+
+.principal{ display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
 
 .Titulo-productos {
   text-align: center;
   color: #3c2313;
-  font-family: "Roboto", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: bold;
@@ -101,60 +124,156 @@ display:flex;
 }
 
 .productos {display:flex;
-    margin-top:49px;
-    margin-bottom: 462px;
     justify-content: center;
-    
-    
+    margin-top:50px;
+    margin-bottom:100px;
     }
 
 .prod { text-align: center;
+  margin: 20px;}
     
 
-}
-
-h2 {
+.descripcion {
   color: #3c2313;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 500;
 }
 
-h3 {
+.precio {
   color: #f0a83e;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 500;
 }
 
-.suscripcion {background-color: #f0a83e;
-    background-size: contain;
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    font-weight: 700; 
-    color:rgb(255, 255, 255);
-    line-height: 60px;
-    padding-left:24px;
+.caja-contactanos {display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom:82px;
 }
-.contacto{background-color:#3c2313;
+
+h2 {
+  color: #3c2313;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.form{background-color: #3c2313;
+  font-size: 9px;
+color:#ffffff;
+font-style: normal;
+text-align: left; 
+padding:15px 230px 15px 15px;
+border-radius: 15px; 
+margin:10px}
+
+.botones {display: flex;
+justify-content:center;
+margin-top: 40px;
+}
+
+.boton1{background-color:#8A8787;
+  font-size: 16px;
+color:#ffffff;
+font-style: normal;
+text-align: center; 
+padding:8px 25px;
+border-radius: 15px; 
+margin-right: 10px;
+}
+
+.boton2 {background-color:#f0a83e;
+  font-size: 16px;
+color:#ffffff;
+font-style: normal;
+text-align: center; 
+padding:8px 34px;
+border-radius: 15px; 
+}
+
+.caja-suscripcion {background-color: #f0a83e;
+    background-size: contain;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;}
+
+    .texto-suscr {font-size: 20px;
+      font-weight: 700; 
+      color:rgb(255, 255, 255);
+      padding-left:24px;
+      display: flex;
+      height: 60px;
+      justify-content: flex-start;
+      align-items: center;
+      
+    }
+
+    .texto-suscr p{padding-left:12px}
+
+    .caja-correo {display:flex;
+    justify-content: center;
+    align-items: center;}
+
+    .correo {background-color: #ffffff;
+      font-size: 9px;
+    color:#a0a0a0;
+    font-style: normal;
+    text-align: left; 
+    padding:15px 230px 15px 15px;
+    border-radius: 15px; 
+    margin:10px}
+
+    .boton3 {background-color:#3c2313;
+      font-size: 9px;
+      color:#ffffff;
+      font-style: normal;
+      text-align: center; 
+      padding:12px 10px;
+      border-radius: 15px; 
+      margin-right: 57px;
+      }
+
+
+.caja-contacto {background-color:#3c2313;
 background-size: contain;
-font-family: "Roboto", sans-serif;
     font-size: 10px;
     font-weight: 700; 
     color:#8A8787;
     height: 380px;
-    padding-left:24px;
-    padding-top: 27px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding-left: 70px;
 }
+
+.contacto{display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+}
+
+.caja {display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin:25px
+    }
+
+.texto-caja {display:flex;
+flex-direction: column;
+margin-left:29px;
+} 
 
 h4{font-family: "Roboto", sans-serif;
     font-size: 20px;
     font-weight: 700; 
     color:rgb(255, 255, 255);
-    }
+        }
 
-.caja {margin-bottom:29px;
-    }
+.logo-footer{padding-right: 78px;}
+    
 
 .derechos{background-color: rgb(0, 0, 0);
     background-size: contain;

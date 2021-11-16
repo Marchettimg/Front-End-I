@@ -1,7 +1,8 @@
+* {margin:0px}
+
 body {width:1024px;
-    height:1024px;
-    padding:0px;
-    margin:0px; 
+    height: 1024px;
+    margin:0px auto; 
     font-family: 'Roboto', sans-serif;
 }
 
@@ -28,11 +29,9 @@ body {width:1024px;
     font-style: normal;
     padding: 28px;
     margin: 0px;
-
-
 }
 
-.caja-batman{ background-image: url("../img/fondo1.png");
+.caja-fondo{ background-image: url("../img/fondo1.png");
 background-size:contain;
 position: relative;
 top:154px;
@@ -40,3 +39,54 @@ left:34px;
 width:300px;
 height: 193px;
 }
+
+.corazon {position:absolute;
+    z-index:10px;
+    text-align: left;
+}
+
+.caja-texto {
+    width: 300px;
+    height: 336px;
+    background-color: #f3f3f3;
+    position: relative;
+    left: 34px;
+    margin-bottom: 180px;}
+
+.titulo2 {
+    font-size:30px;
+    text-align: center;
+    color:black;
+    padding-top:70px;
+    } 
+
+.texto {position:relative;
+top: 10px;
+font-size: 16px;
+text-align: left;
+color:black;
+padding-left:10px;
+padding-right: 10px;
+}
+
+.caja-foto {position: relative;
+    top:50px;
+    left: 120px;
+    z-index: 10px;}
+
+.foto {  border-radius: 50%;
+    }
+
+.link{position: relative;
+    left: 85px;
+    top:85px;
+    text-decoration: none;
+    color: #f3f3f3;
+    background-color: #00669f;
+    text-align: center;
+    padding: 15px 37px;
+}
+
+footer {background-color: #00669f;
+    height: 51px;
+    }
