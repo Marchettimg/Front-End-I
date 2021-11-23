@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+}
+
+body {
+  width: 100%;
+}
+
+/* Encabezado del sitio */
+
+
+.header-top {
+  background-color: rgba(28, 209, 176, 1);
+  padding: 20px;
+  font-size: 15px;
+ }
+
+.header-bottom {font-size: 40px;
+  font-weight: 400;
+  background-color: #00669F;
+  box-sizing: content-box;
+  padding: 20px;
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+
+/* Seccion principal - cards */
+
+.cards {width: 93%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin:200px 40px
+  
+  }
+
+/*Formato de card generico*/
+
+.card {width:30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:40px
+}
+
+.fa-heart {font-size: 2rem;
+  color:#CC2424;
+  z-index: 10;
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left:25px;
+  padding-top:20px
+}
+
+.fondo {width:100%;
+  height: 263px;
+  background-image: url("../Images/img-batman.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content {
+  background-color: #f3f3f3;
+  height: 458px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 0px;
+}
+
+.content h2 {font-size: 40px;
+  margin-top: 100px;
+  font-style: normal;
+  font-weight: 400;
+  }
+
+.descripcion {font-size: 1.3rem;
+  margin: 14px 24px 50px 24px;
+
+}
+
+.fotoPerfil {position:absolute;
+  top:560px;
+  z-index: 10;
+  border-radius: 100%;
+  height:160px;
+  width: 160px;
+  }
+
+.infoExtra {background-color: #00669F;
+width: 174px;
+height: 65px;
+margin-bottom: 18px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border: none;
+}
+
+.infoExtra a {color:#f3f3f3;
+font-size: 1.25rem;
+font-weight: 400;
+}
+
+/* Pie del sitio */
+
+footer {background-color: #00669F;
+  height: 68px;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.pie {font-size: 1.3rem;
+color:#f3f3f3;
+margin-left:20px}

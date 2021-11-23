@@ -1,0 +1,103 @@
+* {
+    margin: auto;
+    padding: 0;
+    color: black;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+  }
+  
+  header {
+    background-color: rgba(28, 209, 176, 1);
+    padding: 20px;
+    font-size: 25px;
+  }
+  
+  h1 {
+    font-size: 50px;
+    background-color: rgba(0, 102, 159, 1);
+    box-sizing: content-box;
+    padding: 20px;
+  }
+  
+  main section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  
+  .card {
+    position: relative;
+    align-items: center;
+    padding: 200px 20px 1000px 10px;
+    display: inline-block;
+  }
+  
+  /*first card*/
+  
+  .fondoImg {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+  }
+  
+  .fotoPerfil {
+    border-radius: 100px;
+    position: absolute;
+    top: 120px;
+    bottom: 2px;
+    left: 100px;
+  }
+  
+  div .content {
+    position: absolute;
+    bottom: 5px;
+    top: 200px;
+    width: 300px;
+    border-bottom: 5px solid grey;
+    margin: 40px 20px 600px 20px;
+  }
+  
+  h2 {
+    position: absolute;
+    padding: 20px 80px;
+  }
+  
+  .description {
+    position: absolute;
+    padding: 80px 115;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    width: 300px;
+  }
+  
+  .infoAdicional {
+    position: absolute;
+    margin-top: 220px;
+    align-items: center;
+    background-color: rgb(70, 173, 233);
+    padding: 10px;
+    color: white;
+    right: 125px;
+  }
+  
+  /*second card*/
+  
+  .second{
+    margin-left: 500px;
+  }
+  
+  /*third card*/
+  
+  .third{
+    margin-left: 500px;
+  }
+  
+  footer {
+    background-color: rgba(0, 102, 159, 1);
+    padding: 30px;
+  }
+  
+  footer p {
+    color: rgba(255, 249, 249, 1);
+    font-size: 40;
+  }

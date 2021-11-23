@@ -1,45 +1,50 @@
-* {
+* {padding:0;
   margin: 0;
-}
-
-body {font-family: "Roboto", sans-serif;
-  padding-left: 15%;
-  padding-right: 15%;
-  margin: auto;
-}
-
-.navegador1 {
-  background-color: rgb(0, 0, 0);
-  background-size: contain;
-  color: rgb(255, 255, 255);
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  width: auto;
+}
+
+body{width:100vw}
+
+/* Navegador superior */
+
+.nav1 {
+  background-color: rgb(0, 0, 0);
+  background-size: cover;
+  color: rgb(255, 255, 255);
   font-size: 10px;
   font-weight: 400;
-  line-height: 20px;
+  width: 100%;
+  height: 20px;
   display:flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 58px;
+  }
+
+.lista1 { 
+  padding-left: 55px;
 }
 
-.navegador1 ul { display: flex;
-justify-content: space-around;
-padding-right: 55px;
-}
+.lista2 {display:flex;
+  justify-content: space-between;
+padding-right: 55px;}
 
-.lista1 li { margin: 9px;
-}
+.lista2 li {margin: 9px;}
 
 a {color:white;
   text-decoration: none;
 }
 
-.navegador2 {
+/* Encabezado del sitio */
+
+.nav-header {
   background-color: #f0a83b;
   background-size: contain;
   color: rgb(255, 255, 255);
   font-size: 13px;
   font-weight: 400;
+  width:100%;
   height: 63px;
   display: flex;
   justify-content: space-between;
@@ -47,20 +52,27 @@ a {color:white;
   padding-left: 40px;
 }
 
-.navegador2 ul { display: flex;
+.lista-nav { display: flex;
   justify-content: space-around;
   padding-right: 40px;
   }
   
- .lista2 li { margin: 9px;
+.lista-nav li { margin: 9px;
   margin:20px
   }
+
+.hamburguesa {display:none}
+
+
+/* Encabezado seccion principal */
+
 
 .bienvenida {
   background-image: url("../img/img1.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 409px;
+  height: 410px;
+  width:100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -74,26 +86,29 @@ a {color:white;
 
 .texto1 {background-color: #ffffff;
 color:#3c2313;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 400;
-  padding:10px;
+  padding:14px;
   margin:12px;
 }
 
 .texto2 {
     color:#3c2313;
-    font-size: 16px;
+    font-size: 21px;
     font-weight: 400;
     margin-bottom: 12px;
     }
 
 .texto3 {background-color: #f0a83b;
   color:rgb(255, 255, 255);
-font-size: 16px;
+font-size: 21px;
 font-weight: 400;
 padding: 15px 23px;
 border-radius: 5px;
 }
+
+
+/* Seccion principal */
 
 .principal{ display:flex;
   flex-direction: column;
@@ -147,6 +162,9 @@ display:flex;
   font-weight: 500;
 }
 
+
+/* Formulario contacto */
+
 .caja-contactanos {display:flex;
   flex-direction: column;
   justify-content: center;
@@ -194,6 +212,8 @@ padding:8px 34px;
 border-radius: 15px; 
 }
 
+/* Seccion de suscripcion */
+
 .caja-suscripcion {background-color: #f0a83e;
     background-size: contain;
     height: 60px;
@@ -205,7 +225,6 @@ border-radius: 15px;
       color:rgb(255, 255, 255);
       padding-left:24px;
       display: flex;
-      height: 60px;
       justify-content: flex-start;
       align-items: center;
       
@@ -236,6 +255,8 @@ border-radius: 15px;
       margin-right: 57px;
       }
 
+      /* Pie del sitio */
+
 
 .caja-contacto {background-color:#3c2313;
 background-size: contain;
@@ -246,13 +267,14 @@ background-size: contain;
     display:flex;
     justify-content: space-between;
     align-items:center;
-    padding-left: 70px;
+    
 }
 
 .contacto{display: flex;
 flex-direction: column;
 justify-content: space-between;
 align-items: flex-start;
+padding-left: 70px;
 }
 
 .caja {display: flex;
@@ -278,11 +300,128 @@ h4{font-family: "Roboto", sans-serif;
 .derechos{background-color: rgb(0, 0, 0);
     background-size: contain;
     color: rgb(255, 255, 255);
-    font-family: "Roboto", sans-serif;
     font-size: 10px;
     font-weight: 700;
-    line-height: 20px;
-    padding-left: 419px;
+    height: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Mobile media queries */
 
+
+@media (min-width:300px) and (max-width: 450px) { 
+
+  /* Encabezado del sitio */
+
+  .nav1 { display:none}
+
+  .lista-nav { display:none}
+
+.nav-header{ display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0px;
+  }
+
+.hamburguesa {display: flex;
+justify-content: flex-end;
+padding-right: 30px;
+font-size:1.5rem}
+
+.logo {padding-left: 18px;}
+
+/* Encabezado seccion principal */
+
+
+.caja-textos {display:flex;
+flex-direction: column;
+align-items: center;}
+
+.texto1 {font-size: 25px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 12px 39px;
+}
+
+.texto2 {align-self: flex-end;
+ margin-right:10px;}
+
+.texto3 {align-self: flex-end;
+margin-right: 40px;}
+
+/* Seccion principal */
+
+.productos {display:flex;
+  flex-direction: column;
+align-items: center;}
+
+/* Formulario de contacto */
+
+.boton1 {font-size: 16px;
+padding: 13px 78px 13px 58px}
+
+.boton2{font-size: 16px;
+padding:13px 75px }
+
+/* Seccion de suscripcion */
+
+.caja-suscripcion {background-color: #f0a83e;
+  background-size: contain;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+align-items: center;}
+
+.texto-suscr {display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.caja-correo {display:flex;
+  justify-content: space-between;
+  align-items: center;
+   padding:0px;
+   margin:0px}
+
+  .correo { font-size: 10px;
+    padding:15px 118px 15px 15px;
+    margin-right: 18px;
+  }
+
+  .boton3 { font-size: 15px;
+    font-weight: bold;
+    padding:9px;
+  margin:0px}
+
+  /* Pie del sitio */
+
+  .caja-contacto {height: 380px;
+        display:flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items:center;
+        padding:0px;
+        margin:0px
+        }
+
+  .contacto {padding-left: 55px;}
+
+  .texto-caja h4{font-size: 24px;
+    font-weight: bold;
+
+  }
+
+  .texto-caja p{font-size: 13px;
+    font-weight: bold;
+
+  }
+
+  .caja {margin:15px}
+
+  .logo-footer {padding-top: 20px;
+  padding-left: 140px;}
+
+  .derechos {font-size: 13px;}
