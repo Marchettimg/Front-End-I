@@ -96,13 +96,19 @@
       <div class="caja-contactanos">
         <div>
           <h2>Contactanos</h2>
-          <p class="form">Nombre y apellido</p>
-          <p class="form">Ingresa tu correo electronico</p>
-          <p class="form">Telefono</p>
         </div>
+        <form action="#" method="POST" class=form>
+          <label for="nombre" name="datos"></label>
+          <input type="text" name="datos" id="nombre" placeholder="Nombre y Apellido">
+          <label for="email" name="datos"></label>
+          <input type="text" name="datos" id="email" placeholder="Correo electronico">
+          <label for="tel" name="datos"></label>
+          <input type="text" name="datos" id="tel" placeholder="Telefono">
+          </form>
+        
         <div class="botones">
-          <p class="boton1"><a href="#">Resetear</a></p>
-          <p class="boton2"><a href="#">Enviar</a></p>
+          <button type="reset" class="boton1">Resetear</button>
+          <button type="submit" class="boton2">Enviar</button>
         </div>
       </div>
     </section>
@@ -116,10 +122,11 @@
         <p>Suscribete para mas novedades</p>
       </div>
 
-      <div class="caja-correo">
-        <p class="correo">Ingresa tu correo electronico</p>
-        <p class="boton3">Suscribirme</p>
-      </div>
+      <form class="caja-correo">
+        <label for="correo" name="suscripcion"></label>
+        <input type="text" name="suscripcion" id="correo" placeholder="Ingresa tu correo electronico">
+        <button type="submit"  class="boton3">Suscribirme</button>
+      </form>
 
     </div>
 

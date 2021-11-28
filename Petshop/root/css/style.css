@@ -1,11 +1,11 @@
 * {padding:0;
   margin: 0;
+  border:0;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
-  width: auto;
-}
+  }
 
-body{width:100vw}
+
 
 /* Navegador superior */
 
@@ -23,12 +23,12 @@ body{width:100vw}
   }
 
 .lista1 { 
-  padding-left: 55px;
+  margin-left: 20px;
 }
 
 .lista2 {display:flex;
   justify-content: space-between;
-padding-right: 55px;}
+margin-right: 20px;}
 
 .lista2 li {margin: 9px;}
 
@@ -47,14 +47,13 @@ a {color:white;
   width:100%;
   height: 63px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding-left: 40px;
-}
+  }
 
 .lista-nav { display: flex;
   justify-content: space-around;
-  padding-right: 40px;
+  
   }
   
 .lista-nav li { margin: 9px;
@@ -71,7 +70,7 @@ a {color:white;
   background-image: url("../img/img1.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 410px;
+  height: 600px;
   width:100%;
   display: flex;
   justify-content: flex-end;
@@ -179,7 +178,12 @@ h2 {
   text-align: center;
 }
 
-.form{background-color: #3c2313;
+.form{display:flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;}
+
+#nombre, #email, #tel{background-color: #3c2313;
   font-size: 9px;
 color:#ffffff;
 font-style: normal;
@@ -187,6 +191,7 @@ text-align: left;
 padding:15px 230px 15px 15px;
 border-radius: 15px; 
 margin:10px}
+
 
 .botones {display: flex;
 justify-content:center;
@@ -201,6 +206,7 @@ text-align: center;
 padding:8px 25px;
 border-radius: 15px; 
 margin-right: 10px;
+border:none
 }
 
 .boton2 {background-color:#f0a83e;
@@ -209,13 +215,23 @@ color:#ffffff;
 font-style: normal;
 text-align: center; 
 padding:8px 34px;
-border-radius: 15px; 
+border-radius: 15px;
+border:none; 
+}
+
+#nombre:hover, #email:hover, #tel:hover {
+  border: 2px solid #f0a83e;
+}
+
+#nombre:focus, #email:focus, #tel:focus {
+  background-color: #3c231393;
 }
 
 /* Seccion de suscripcion */
 
 .caja-suscripcion {background-color: #f0a83e;
     background-size: contain;
+    width: 100%;
     height: 60px;
     display: flex;
     justify-content: space-between;}
@@ -233,17 +249,19 @@ border-radius: 15px;
     .texto-suscr p{padding-left:12px}
 
     .caja-correo {display:flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;}
 
-    .correo {background-color: #ffffff;
+    #correo {background-color: #ffffff;
       font-size: 9px;
     color:#a0a0a0;
     font-style: normal;
     text-align: left; 
-    padding:15px 230px 15px 15px;
+    padding:15px 200px 15px 15px;
     border-radius: 15px; 
-    margin:10px}
+    margin:10px;
+    border:none
+  }
 
     .boton3 {background-color:#3c2313;
       font-size: 9px;
@@ -253,6 +271,7 @@ border-radius: 15px;
       padding:12px 10px;
       border-radius: 15px; 
       margin-right: 57px;
+      border:none
       }
 
       /* Pie del sitio */
@@ -264,8 +283,9 @@ background-size: contain;
     font-weight: 700; 
     color:#8A8787;
     height: 380px;
+    width:100%;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items:center;
     
 }
@@ -274,7 +294,6 @@ background-size: contain;
 flex-direction: column;
 justify-content: space-between;
 align-items: flex-start;
-padding-left: 70px;
 }
 
 .caja {display: flex;
@@ -288,13 +307,12 @@ flex-direction: column;
 margin-left:29px;
 } 
 
-h4{font-family: "Roboto", sans-serif;
-    font-size: 20px;
+h4 {font-size: 20px;
     font-weight: 700; 
     color:rgb(255, 255, 255);
         }
 
-.logo-footer{padding-right: 78px;}
+.logo-footer{border:0px}
     
 
 .derechos{background-color: rgb(0, 0, 0);
@@ -302,6 +320,7 @@ h4{font-family: "Roboto", sans-serif;
     color: rgb(255, 255, 255);
     font-size: 10px;
     font-weight: 700;
+    width:100%;
     height: 20px;
     display:flex;
     justify-content: center;
@@ -311,7 +330,7 @@ h4{font-family: "Roboto", sans-serif;
 /* Mobile media queries */
 
 
-@media (min-width:300px) and (max-width: 450px) { 
+@media (max-width:500px) { 
 
   /* Encabezado del sitio */
 
@@ -334,13 +353,16 @@ font-size:1.5rem}
 
 /* Encabezado seccion principal */
 
+.bienvenida {width:100vw;
+  height: 410px;
+  }
 
 .caja-textos {display:flex;
 flex-direction: column;
 align-items: center;}
 
 .texto1 {font-size: 25px;
-  text-align: center;
+  text-align: left;
   border-radius: 5px;
   padding: 12px 39px;
 }
@@ -352,6 +374,8 @@ align-items: center;}
 margin-right: 40px;}
 
 /* Seccion principal */
+.titulo-productos p {padding-left: 110px;
+  padding-right:90px;}
 
 .productos {display:flex;
   flex-direction: column;
@@ -359,11 +383,11 @@ align-items: center;}
 
 /* Formulario de contacto */
 
-.boton1 {font-size: 16px;
-padding: 13px 78px 13px 58px}
+#nombre, #email, #tel{ width:298px}
 
-.boton2{font-size: 16px;
-padding:13px 75px }
+.boton1, .boton2 {font-size:16px;
+padding: 13px 0px;
+flex-grow:1}
 
 /* Seccion de suscripcion */
 
@@ -373,28 +397,33 @@ padding:13px 75px }
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-align-items: center;}
+  align-items: center;}
 
 .texto-suscr {display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  padding-left: 0px;
   }
 
-.caja-correo {display:flex;
-  justify-content: space-between;
+.caja-correo {width:100vw;
+  display:flex;
+  justify-content: space-around;
   align-items: center;
-   padding:0px;
-   margin:0px}
+  padding:0px;
+  margin:0px}
 
-  .correo { font-size: 10px;
-    padding:15px 118px 15px 15px;
-    margin-right: 18px;
+  #correo { font-size: 10px;
+    padding-top: 15px;
+    padding-bottom:15px;
+    padding-right:10px;
+    flex-grow: 1;
+    margin-left: 20px
+    
   }
 
   .boton3 { font-size: 15px;
     font-weight: bold;
     padding:9px;
-  margin:0px}
+  margin:10px}
 
   /* Pie del sitio */
 
